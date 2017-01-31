@@ -1,7 +1,10 @@
 #include "ofApp.h"
+#include<iostream>
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+	
+	cout<<"\n\nHello from setup"<<endl;
 
 }
 
@@ -15,10 +18,10 @@ void ofApp::draw(){
 ofBackground(0);
 ofTranslate(ofGetWidth()/2, ofGetHeight()/2);
 
-for(int i = 0; i < 3; i++)
+for(int i = 0; i < 30; i++)
  {
-   ofRotate(20);
-   ofDrawLine(0,0,0,220);
+   ofRotate(30);
+   ofDrawLine(0,0,0,230);
 
  }
 }
